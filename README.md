@@ -3,7 +3,7 @@
 ## Aplicaciones Móviles - Ingeniería de Sistemas
 
 **Proyecto:** RetrofitLab  
-**Estudiante:**Miguel Angel Rizo Arias  
+**Estudiante:** Miguel Angel Rizo Arias  
 **Repositorio:** `tu-apellido-post1-u5`
 
 ---
