@@ -1,47 +1,44 @@
 # Rizo-Arias-post1-u5
-# RetrofitLab - Consumo de API con Retrofit y OkHttp
+# Post-Contenido 1 - Unidad 5  
+## Aplicaciones Móviles - Ingeniería de Sistemas
 
-**Post-Contenido 1 - Unidad 5: Consumo de Servicios y Comunicación con Backend**  
-**Asignatura:** Aplicaciones Móviles  
-**Carrera:** Ingeniería de Sistemas  
-**Universidad de Santander - 2026**
+**Proyecto:** RetrofitLab  
+**Estudiante:**Miguel Angel Rizo Arias  
+**Repositorio:** `tu-apellido-post1-u5`
 
-## Descripción del Proyecto
+---
 
-Esta aplicación Android es un cliente HTTP robusto que consume la API pública **JSONPlaceholder** (`https://jsonplaceholder.typicode.com`).  
+## Descripción del Flujo Implementado
 
-Se implementa una lista de posts con **paginación simulada**, gestión completa de estados de UI (Loading, Success, Error, Empty) y un **manejo tipado de errores** mediante `sealed class`.
+Esta aplicación es un cliente HTTP desarrollado en Android con Jetpack Compose que consume la API pública **JSONPlaceholder** (`https://jsonplaceholder.typicode.com`).
 
-### Tecnologías y Arquitectura utilizadas
+**Flujo principal implementado:**
 
-- **Arquitectura**: MVVM + Clean Architecture (capas: data / domain / presentation)
-- **Networking**: Retrofit 2 + OkHttp 4 + Kotlinx Serialization
-- **Interceptors**: Logging (BODY) + Interceptor de headers simulando autenticación
-- **Asincronía**: Kotlin Coroutines + `viewModelScope`
-- **Gestión de estado**: StateFlow + Jetpack Compose
-- **Manejo de errores**: Sealed class `AppError` con mapper desde excepciones
-- **UI**: Jetpack Compose + LazyColumn + estados reactivos
+1. Al iniciar la aplicación se muestra el estado **Loading** mientras se realiza la petición a la API.
+2. Una vez cargados los datos, se presenta la lista de posts usando `LazyColumn`.
+3. El usuario puede presionar el botón **"Cargar más"** para obtener la siguiente página de posts. Los nuevos posts se agregan al final de la lista (paginación acumulativa).
+4. Si no hay conexión a internet, se muestra el estado **Error** con un mensaje claro y un botón de **"Reintentar"**.
+5. Todos los estados de la interfaz (Loading, Success, Error, Empty) se manejan de forma reactiva mediante `StateFlow`.
+6. Se utiliza `HttpLoggingInterceptor` para visualizar en Logcat todas las solicitudes y respuestas HTTP (incluyendo headers y body).
 
-## Características implementadas
+**Componentes clave implementados:**
+- Retrofit + OkHttp con interceptors (logging y simulación de autenticación)
+- Kotlinx Serialization para DTOs y mapeo a modelo de dominio
+- Sealed class `AppError` para manejo tipado y amigable de errores
+- Arquitectura MVVM con ViewModel y StateFlow
+- Jetpack Compose para la interfaz (Scaffold, LazyColumn y gestión de estados)
 
-- Consumo de endpoint `/posts` con parámetros de paginación (`_page` y `_limit`)
-- Interceptor de logging que muestra requests y responses completos en Logcat
-- Interceptor personalizado que agrega headers (`Accept`, `X-App-Version`)
-- Mapeo DTO → Modelo de dominio (con excerpt del body)
-- Manejo robusto de errores de red, servidor, no autorizado, no encontrado, etc.
-- Estados de UI completos: Loading, Success, Error y Empty
-- Paginación manual con botón "Cargar más" (acumula los posts sin reemplazar)
-- Reconexión automática (botón Reintentar cuando no hay conexión)
+---
 
 ## Requisitos
 
 - Android Studio Hedgehog (2023.1.1) o superior
 - JDK 17
-- Dispositivo o emulador con Android 8.0+ (API 26)
-- Conexión a internet
+- Dispositivo físico con Android 8.0+ o emulador (API 26+)
+- Conexión a internet para consumir la API
 
-## Cómo ejecutar el proyecto
+## Instrucciones de Configuración y Ejecución
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/TU_USUARIO/TU_APELLIDO-post1-u5.git
+   git clone https://github.com/TU_USUARIO/tu-apellido-post1-u5.git
