@@ -1,4 +1,3 @@
-# Rizo-Arias-post1-u5
 # Post-Contenido 1 - Unidad 5  
 ## Aplicaciones Móviles - Ingeniería de Sistemas
 
