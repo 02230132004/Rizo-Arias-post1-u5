@@ -9,7 +9,7 @@
 ## Capturas de pantalla
 
 ### 1. Pantalla de carga (Loading)
-![Loading](screenshots/loading.jpeg)
+![Loading](capturas/loading.jpeg)
 
 ### 2. Lista de posts cargada correctamente (Success)
 ![Success](screenshots/success.jpeg)
