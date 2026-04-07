@@ -9,13 +9,14 @@
 ## Capturas de pantalla
 
 ### 1. Pantalla de carga (Loading)
-![Loading](screenshots/loading.png)
+![Loading](screenshots/loading.jpeg)
 
 ### 2. Lista de posts cargada correctamente (Success)
-![Success](screenshots/success.png)
+![Success](screenshots/success.jpeg)
+![Success](screenshots/success2.jpeg)
 
 ### 3. Manejo de error de red (Error) + botón Reintentar
-![Error](screenshots/error.png)
+![Error](screenshots/error.jpeg)
 
 ## Descripción del Flujo Implementado
 
