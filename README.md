@@ -12,11 +12,11 @@
 ![Loading](capturas/loading.jpeg)
 
 ### 2. Lista de posts cargada correctamente (Success)
-![Success](screenshots/success.jpeg)
-![Success](screenshots/success2.jpeg)
+![Success](capturas/success.jpeg)
+![Success](capturas/success2.jpeg)
 
 ### 3. Manejo de error de red (Error) + botón Reintentar
-![Error](screenshots/error.jpeg)
+![Error](capturas/error.jpeg)
 
 ## Descripción del Flujo Implementado
 
