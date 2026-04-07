@@ -3,9 +3,19 @@
 
 **Proyecto:** RetrofitLab  
 **Estudiante:** Miguel Angel Rizo Arias  
-**Repositorio:** `tu-apellido-post1-u5`
+**Repositorio:** `RIZO-post1-u5`
 
 ---
+## Capturas de pantalla
+
+### 1. Pantalla de carga (Loading)
+![Loading](screenshots/loading.png)
+
+### 2. Lista de posts cargada correctamente (Success)
+![Success](screenshots/success.png)
+
+### 3. Manejo de error de red (Error) + botón Reintentar
+![Error](screenshots/error.png)
 
 ## Descripción del Flujo Implementado
 
@@ -38,6 +48,3 @@ Esta aplicación es un cliente HTTP desarrollado en Android con Jetpack Compose 
 
 ## Instrucciones de Configuración y Ejecución
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/TU_USUARIO/tu-apellido-post1-u5.git
